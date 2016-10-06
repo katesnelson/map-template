@@ -126,7 +126,7 @@ $("#search").submit(function(event) {
 function getLayer(callback, cloudantView) {
 // ACTION ITEM: Replace cloudant database URL with URL for your database 	
 	var cloudantURLbase =
-		"'https://katesnelson.cloudant.com/kate/_design/tour/_view/";
+		"https://katesnelson.cloudant.com/kate/_design/tour/_view/";
 	var cloudantURLcallback = "?callback=?";
 	var thisCloudantURL = cloudantURLbase + cloudantView + cloudantURLcallback;
 	$.getJSON(thisCloudantURL, function(result) {
@@ -143,7 +143,7 @@ function getLayer(callback, cloudantView) {
 function searchPoints(callback, cloudantSearch) {
 // ACTION ITEM: Replace cloudant database URL with URL for your database 	
 	var cloudantURLbase =
-		"'https://katesnelson.cloudant.com/kate/_design/tour/_search/ids?q=";
+		"https://katesnelson.cloudant.com/kate/_design/tour/_search/ids?q=";
 	var cloudantURLcallback = "&callback=?";
 	var thisCloudantURL = cloudantURLbase + cloudantSearch + cloudantURLcallback;
 	$.getJSON(thisCloudantURL, function(result) {
