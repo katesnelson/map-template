@@ -167,7 +167,7 @@ function getPoints(cloudantIDs) {
 
 	function getPoint(id) {
 // ACTION ITEM: Replace cloudant database URL with URL for your database 		
-		var cloudantURLbase = "'https://katesnelson.cloudant.com/kate/;
+		var cloudantURLbase = "https://katesnelson.cloudant.com/kate/";
 		var url = cloudantURLbase + id;
 		return $.getJSON(url); // this returns a "promise"
 	}
